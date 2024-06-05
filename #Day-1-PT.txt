@@ -1,0 +1,88 @@
+s="sasankan"
+print(s[2:-2])
+'''
+a=input("enter the number:")
+print(a)
+print(type(a))
+'''
+
+'''
+a=0b11110111
+print(int(a))
+'''
+
+list1=[2,3,"Dog",True,9.99]
+list1.append("cut")
+print(list1)
+list1.remove("cut")
+print(list1)
+
+'''
+set1={10,20,10,"dog",True,"dog"}
+print(set1)
+'''
+'''
+#ARITHEMATIC OPER
+a=10
+b=2
+print("a+b=",a+b)
+print("a-b=",a-b)
+print("a*b=",a*b)
+print("a/b=",a/b)
+print("a//b=",a//b)
+print("a%b=",a%b)
+print("a**b=",a**b)
+'''
+'''
+#RELATIONAL OPER
+a=10
+b=20
+print("a>b is",a>b)
+print("a>=b is",a>=b)
+print("a<b is",a<b)
+print("a<=b is",a<=b)
+'''
+'''
+a=10
+b=20
+a==b
+print(a)
+print(b)
+print(a==b)/(a!=b)
+'''
+'''
+#BITWISE OPER
+a=10
+b=20
+a,b=b,a
+print(a)
+print(b)
+'''
+'''swap 2 num using xor'''
+'''
+a=5
+b=7
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)
+'''
+
+#Checking a num is even or odd
+n=int(input())
+if(n&1==0):
+    print("even")
+else:
+    print("odd")
+    
+#If else conditions:
+
+a=int(input("enter the num:"))
+b=int(input("enter the num:"))
+if(a < b):
+    print("less than b")
+elif(a > b):
+    print("greater than a")
+else:
+    print("both are equal")
