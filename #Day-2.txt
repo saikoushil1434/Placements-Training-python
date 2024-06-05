@@ -1,0 +1,151 @@
+'''n=float(input("enter the number:"))
+if n//2:
+    print(round(n,2))'''
+    
+'''r=55.5555555
+print(round(r,3))'''
+
+'''n=list((input("enter the num: ").split(" ")))
+print(n)'''
+
+'''x=a, b, c = map(float, input("enter the number: ").split(" "))
+print(x)
+print(b)'''
+
+'''weight=int(input("Enter the weight:"))
+if weight%2!=0:
+    print("No")
+else:
+    x=weight//2
+    if x%2==0:
+        print("bro1 pieces=", x,"bro2 pieces=",x)
+    else:
+        print("bro1 pieces=",x-1,"bro2 pieces=",x+1)'''
+    
+'''steps=int(input("Enter the steps:"))
+if steps<=5 :
+    print(1)
+elif steps%5==0:
+    print(steps/5)
+else:
+    print(steps//5+1)'''
+    
+'''n=(list(input("Enter the numbers: ").split(" ")))
+
+print(n)'''
+'''x=hired, crime= map(float, input("Enter the numbers: ").split(" "))
+print(x)
+print(a)'''
+n=int(input("Enter the range of data:))
+available_police=0
+untreated_crimes=0
+for _ in range(n):
+    event=int(input("Enter event:"))
+    if event ==-1:
+        if available_police >0:
+            available_police-=1
+        else:
+            untreated_crimes+=1
+    else:
+        available_police+=event
+print(untreated_crimes)
+
+'''def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers."
+    elif n == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
+num = 4
+print(f"The factorial of {num} is {factorial(num)}")'''
+
+'''def fibonacci(nterms):
+    # First two terms
+    n1, n2 = 0, 1
+    count = 0
+    if nterms <= 0:
+        return "Please enter a positive integer"
+    elif nterms == 1:
+        return "Fibonacci sequence up to 1 term: 0"
+    else:
+        result = []
+        while count < nterms:
+            result.append(n1)
+            nth = n1 + n2
+            # Update values
+            n1 = n2
+            n2 = nth
+            count += 1
+        return result'''
+
+'''num_terms = 10
+print(f"Fibonacci sequence up to {num_terms} terms: {fibonacci(num_terms)}")
+
+def count_digits(number):
+    return len(str(number))
+
+num = 12345
+print(f"The number {num} has {count_digits(num)} digits.")'''
+
+'''def sum_of_natural_numbers(n):
+    return n * (n + 1) // 2
+n = 6
+print(f"The sum of the first {n} natural num is {sum_of_natural_numbers(n)}")'''
+
+n=int(input("enter the number"))
+for i in range(1,n+1):
+    print(i)
+    
+#factorial
+'''x=int(input("enter facorial number"))
+f=1
+    
+for i in range(1,x+1):
+    f*=i
+print(f)'''
+
+'''n=int(input("enter the number of terms:"))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b'''
+    
+'''x=int(input("enter facorial number:"))
+f=1
+for i in range(1,x+1):
+    f*=i
+    print(f)'''
+    
+'''n = int(input("enter the number:"))
+count = 0
+while n != 0:
+    n //= 10
+    count += 1
+print("number of digits:", count)'''
+
+n=int(input("enter a number:"))
+print("multiplication table of", n)
+for i in range (1, 11):
+    print(n, "x", i, "=", n*i)
+
+'''n=int(input("enter the num:"))
+rev = 0
+while n > 0:
+    digit = n % 10
+    rev = rev*10+digit
+    n = n//10
+    print("Reversed num:", rev)'''
+
+    
+a=int(input("enter first weight"))
+b=int(input("enter second weight"))
+count = 0
+while(a<=b):
+    a*=3
+    b*=2
+    count+=1
+print(count)
